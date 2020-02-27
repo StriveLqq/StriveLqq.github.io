@@ -139,7 +139,7 @@ function activateLightMode(){
 <li><p>不可变意味着两个字符串能安全地共用同一段底层内存， 使得复制任何长度字符串的开 销都低廉。 类似地， 字符串 s 及其子串（如 s[7:］)可以安全地共用数据， 因此子串生成操作 的开销低廉。 这两种情况下都没有分配新内存。</p>
 </li>
 <li><p>字符串及其子字符串内存布局如下：</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223160142917.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="image-20200223160142917" class="fancybox"><img alt="image-20200223160142917" data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223160142917.png" class="lazyload" title="image-20200223160142917"></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223160142917.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="image-20200223160142917" class="fancybox"><img alt="image-20200223160142917" title="image-20200223160142917" data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223160142917.png" class="lazyload"></a></p>
 </li>
 </ul>
 <h4 id="3-5-1、字符串字面量"><a href="#3-5-1、字符串字面量" class="headerlink" title="3.5.1、字符串字面量"></a>3.5.1、字符串字面量</h4><ul>
@@ -166,11 +166,11 @@ function activateLightMode(){
 </ul>
 <h3 id="3-5-3、UTF-8"><a href="#3-5-3、UTF-8" class="headerlink" title="3.5.3、UTF-8"></a>3.5.3、UTF-8</h3><ul>
 <li><p>UTF-8以字节为单位对Unicode码点作变长编码。UTF-8是现行的一种Unicode标准，每个文字符号用1~4个字节表示， ASCII字符的编码仅占1个字节，而其他常用的文书字符的编码只是2或3个字节。一个文字符号编码的首字节的高位指明了后面还有多少字节。若最高位为0,则标示着它是7位的ASCII码，其文字符号的编码仅占1字节，这样就与传统的ASCII码一致。若最高几位是 110，则文字符号的编码占用2个字节，第二个字节以10开始。更长的编码以此类推。</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223163254430.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="image-20200223163254430" class="fancybox"><img alt="image-20200223163254430" data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223163254430.png" class="lazyload" title="image-20200223163254430"></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223163254430.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="image-20200223163254430" class="fancybox"><img alt="image-20200223163254430" title="image-20200223163254430" data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223163254430.png" class="lazyload"></a></p>
 </li>
 <li><p>Go的源文件总是以UTF-8编码，同时，需要用Go程序操作的文本字符串也优先采用 UTF-8编码。unicode包具备针对单个文字符号的函数（例如区分字母和数字，转换大小写），而unicode/utf8包则提供了按UTF-8编码和解码文字符号的函数。</p>
 </li>
-<li><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223163757091.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="image-20200223163757091" class="fancybox"><img alt="image-20200223163757091" data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223163757091.png" class="lazyload" title="image-20200223163757091"></a></p>
+<li><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223163757091.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="image-20200223163757091" class="fancybox"><img alt="image-20200223163757091" title="image-20200223163757091" data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.0/go-book01-notes03/image-20200223163757091.png" class="lazyload"></a></p>
 </li>
 </ul>
 <h4 id="3-5-4、字符串和字节slice"><a href="#3-5-4、字符串和字节slice" class="headerlink" title="3.5.4、字符串和字节slice"></a>3.5.4、字符串和字节slice</h4><ul>
