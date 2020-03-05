@@ -132,7 +132,7 @@ function activateLightMode(){
 </tr>
 </tbody></table>
 <h4 id="1-浮动口诀之-浮"><a href="#1-浮动口诀之-浮" class="headerlink" title="1). 浮动口诀之 浮"></a>1). 浮动口诀之 浮</h4><p>浮动——浮<del>浮</del>浮<del>~</del>漂浮在普通流的上面。  脱离标准流。 俗称 “脱标”   </p>
-<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong.png" class="lazyload" title></a></p>
+<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong.png" class="lazyload"></a></p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">css</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.5</span>);</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: skyblue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <p><strong>小结</strong>：</p>
@@ -144,13 +144,13 @@ function activateLightMode(){
 
 <p> 所以，box2下面的其实就是跑到box1盒子下面了， 被box1给压住了，遮挡起来了</p>
 <p>来来来，我们看个立体图</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zou.gif" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zou.gif" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zou.gif" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zou.gif" class="lazyload"></a></p>
 <h4 id="3-浮动口诀之-特"><a href="#3-浮动口诀之-特" class="headerlink" title="3). 浮动口诀之 特"></a>3). 浮动口诀之 特</h4><p>浮动——特性  float属性会改变元素display属性。</p>
 <p>任何元素都可以浮动。浮动元素会生成一个块级框，而不论它本身是何种元素。 生成的块级框和我们前面的行内块极其相似。</p>
 <p>体验案例——div 水平排列</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">css</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">background-color</span>: pink;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 转换为行内块元素，可以水平显示，不过 div 之间有间隙，不方便处理 */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* display: inline-block; */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 设置浮动属性，可以让 div 水平排列，并且没有间隙 */</span></span><br><span class="line"></span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.two</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">background-color</span>: hotpink;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong01.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong01.png" class="lazyload" title></a></p>
+<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong01.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong01.png" class="lazyload"></a></p>
 <p><strong>注意： 浮动的元素互相贴靠一起的，但是如果父级宽度装不下这些浮动的盒子， 多出的盒子会另起一行对齐</strong></p>
 <h3 id="4、浮动-float-的应用"><a href="#4、浮动-float-的应用" class="headerlink" title="4、浮动(float)的应用"></a>4、浮动(float)的应用</h3><h4 id="浮动和标准流的父盒子搭配"><a href="#浮动和标准流的父盒子搭配" class="headerlink" title="浮动和标准流的父盒子搭配"></a>浮动和标准流的父盒子搭配</h4><p>我们知道，浮动是脱标的，会影响下面的标准流元素，此时，我们需要给浮动的元素添加一个标准流的父亲，这样，最大化的减小了对其他标准流的影响。</p>
 <blockquote>
@@ -163,7 +163,7 @@ function activateLightMode(){
 </ol>
 <h3 id="5、浮动-float-的扩展"><a href="#5、浮动-float-的扩展" class="headerlink" title="5、浮动(float)的扩展"></a>5、浮动(float)的扩展</h3><h4 id="1-浮动元素与父盒子的关系"><a href="#1-浮动元素与父盒子的关系" class="headerlink" title="1). 浮动元素与父盒子的关系"></a>1). 浮动元素与父盒子的关系</h4><ul>
 <li>子盒子的浮动参照父盒子对齐</li>
-<li>不会与父盒子的边框重叠，也不会超过父盒子的内边距<br><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong02.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong02.png" class="lazyload" title></a></li>
+<li>不会与父盒子的边框重叠，也不会超过父盒子的内边距<br><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong02.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/fudong02.png" class="lazyload"></a></li>
 </ul>
 <h4 id="2-浮动元素与兄弟盒子的关系"><a href="#2-浮动元素与兄弟盒子的关系" class="headerlink" title="2). 浮动元素与兄弟盒子的关系"></a>2). 浮动元素与兄弟盒子的关系</h4><p>在一个父级盒子中，如果<strong>前一个兄弟盒子</strong>是：</p>
 <ul>
@@ -173,12 +173,12 @@ function activateLightMode(){
 <blockquote>
 <p>浮动只会影响当前的或者是后面的标准流盒子，不会影响前面的标准流。</p>
 </blockquote>
-<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/two1.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/two1.jpg" class="lazyload" title></a></p>
+<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/two1.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/two1.jpg" class="lazyload"></a></p>
 <p><strong>建议</strong></p>
 <p><strong>如果一个盒子里面有多个子盒子，如果其中一个盒子浮动了，其他兄弟也应该浮动。防止引起问题</strong></p>
 <h3 id="6、清除浮动"><a href="#6、清除浮动" class="headerlink" title="6、清除浮动"></a>6、清除浮动</h3><h4 id="6-1、为什么要清除浮动"><a href="#6-1、为什么要清除浮动" class="headerlink" title="6.1、为什么要清除浮动"></a>6.1、为什么要清除浮动</h4><p>因为父级盒子很多情况下，不方便给高度，但是子盒子浮动就不占有位置，最后父级盒子高度为0，就影响了下面的标准流盒子。</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/n.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/n.jpg" class="lazyload" title></a></p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/no.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/no.jpg" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/n.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/n.jpg" class="lazyload"></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/no.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/no.jpg" class="lazyload"></a></p>
 <ul>
 <li>总结：<ul>
 <li>由于浮动元素不再占用原文档流的位置，所以它会对后面的元素排版产生影响</li>
@@ -281,10 +281,10 @@ function activateLightMode(){
 </tbody></table>
 <h2 id="十三、定位"><a href="#十三、定位" class="headerlink" title="十三、定位"></a>十三、定位</h2><p>将盒子<strong>定</strong>在某一个<strong>位</strong>置  自由的漂浮在其他盒子的上面  —— CSS 离不开定位，特别是后面的 js 特效。</p>
 <h3 id="1、为什么使用定位"><a href="#1、为什么使用定位" class="headerlink" title="1、为什么使用定位"></a>1、为什么使用定位</h3><p><strong>1. 小黄色块</strong>在图片上移动，<strong>吸引用户的眼球</strong>。</p>
-<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/dingwei1.gif" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/dingwei1.gif" class="lazyload" title></a></p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding3.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding3.png" class="lazyload" title></a></p>
+<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/dingwei1.gif" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/dingwei1.gif" class="lazyload"></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding3.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding3.png" class="lazyload"></a></p>
 <p><strong>2. 当我们滚动窗口的时候，盒子是固定屏幕某个位置的</strong></p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding.png" class="lazyload"></a></p>
 <blockquote>
 <p>将盒子<strong>定</strong>在某一个<strong>位</strong>置  自由的漂浮在其他盒子(包括标准流和浮动)的上面 </p>
 </blockquote>
@@ -354,7 +354,7 @@ function activateLightMode(){
 <td align="center"><strong>固定</strong>定位</td>
 </tr>
 </tbody></table>
-<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding2.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding2.png" class="lazyload" title></a></p>
+<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding2.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/ding2.png" class="lazyload"></a></p>
 <h5 id="1-2-1、静态定位-static"><a href="#1-2-1、静态定位-static" class="headerlink" title="1.2.1、静态定位(static)"></a>1.2.1、静态定位(static)</h5><ul>
 <li><strong>静态定位</strong>是元素的默认定位方式，无定位的意思。它相当于 border 里面的none， 不要定位的时候用。</li>
 <li>静态定位 按照标准流特性摆放位置，它没有边偏移。</li>
@@ -364,7 +364,7 @@ function activateLightMode(){
 <li><strong>相对定位</strong>是元素<strong>相对</strong>于它  原来在标准流中的位置 来说的。（自恋型）</li>
 </ul>
 <p><strong>效果图</strong>：</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/xiang.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/xiang.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/xiang.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/xiang.png" class="lazyload"></a></p>
 <p>相对定位的特点：（务必记住）</p>
 <ul>
 <li>相对于 自己原来在标准流中位置来移动的</li>
@@ -375,7 +375,7 @@ function activateLightMode(){
 <li><p><strong>完全脱标</strong> —— 完全不占位置；  </p>
 </li>
 <li><p><strong>父元素没有定位</strong>，则以<strong>浏览器</strong>为准定位（Document 文档）。</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue.png" class="lazyload"></a></p>
 </li>
 <li><p><strong>父元素要有定位</strong></p>
 <ul>
@@ -383,7 +383,7 @@ function activateLightMode(){
 </ul>
 </li>
 </ol>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue01.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue01.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue01.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue01.png" class="lazyload"></a></p>
 <p>绝对定位的特点：</p>
 <ul>
 <li>绝对是以带有定位的父级元素来移动位置如果父级都没有定位，则以浏览器文档为准移动位置</li>
@@ -392,8 +392,8 @@ function activateLightMode(){
 <p><strong>子绝父相</strong> —— <strong>子级</strong>是<strong>绝对</strong>定位，<strong>父级</strong>要用<strong>相对</strong>定位。</p>
 <p><strong>疑问</strong>：为什么在布局时，<strong>子级元素</strong>使用<strong>绝对定位</strong>时，<strong>父级元素</strong>就要用<strong>相对定位</strong>呢？</p>
 <p>观察下图，思考一下在布局时，<strong>左右两个方向的箭头图片</strong>以及<strong>父级盒子</strong>的定位方式。</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zijue1.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zijue1.png" class="lazyload" title></a></p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zijue2.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zijue2.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zijue1.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zijue1.png" class="lazyload"></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zijue2.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zijue2.png" class="lazyload"></a></p>
 <p><strong>分析</strong>：</p>
 <ol>
 <li><strong>方向箭头</strong>叠加在其他图片上方，应该使用<strong>绝对定位</strong>，因为<strong>绝对定位完全脱标</strong>，完全不占位置。</li>
@@ -417,17 +417,17 @@ function activateLightMode(){
 <p><strong>注意</strong>：<strong>绝对定位/固定定位的盒子</strong>不能通过设置 <code>margin: auto</code> 设置<strong>水平居中</strong>。</p>
 </blockquote>
 <p>在使用<strong>绝对定位</strong>时要想实现水平居中，可以按照下图的方法：</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue2.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue2.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue2.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jue2.png" class="lazyload"></a></p>
 <ol>
 <li><code>left: 50%;</code>：让<strong>盒子的左侧</strong>移动到<strong>父级元素的水平中心位置</strong>；</li>
 <li><code>margin-left: -100px;</code>：让盒子<strong>向左</strong>移动<strong>自身宽度的一半</strong>。</li>
 </ol>
 <p>盒子居中定位示意图：</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zhong.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zhong.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zhong.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zhong.png" class="lazyload"></a></p>
 <h4 id="3-2、堆叠顺序（z-index）"><a href="#3-2、堆叠顺序（z-index）" class="headerlink" title="3.2、堆叠顺序（z-index）"></a>3.2、堆叠顺序（z-index）</h4><p>在使用<strong>定位</strong>布局时，可能会<strong>出现盒子重叠的情况</strong>。</p>
 <p>加了定位的盒子，默认<strong>后来者居上</strong>， 后面的盒子会压住前面的盒子。</p>
 <p>应用 <code>z-index</code> 层叠等级属性可以<strong>调整盒子的堆叠顺序</strong>。如下图所示：</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zindex.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zindex.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zindex.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/zindex.png" class="lazyload"></a></p>
 <p><code>z-index</code> 的特性如下：</p>
 <ol>
 <li><strong>属性值</strong>：<strong>正整数</strong>、<strong>负整数</strong>或 <strong>0</strong>，默认值是 0，数值越大，盒子越靠上；</li>
@@ -460,7 +460,7 @@ function activateLightMode(){
 <li><p>特点： 隐藏之后，不再保留位置。</p>
 </li>
 </ul>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/29none.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/29none.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/29none.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/29none.png" class="lazyload"></a></p>
 <p>实际开发场景：</p>
 <blockquote>
 <p>配合后面js做特效，比如下拉菜单，原先没有，鼠标经过，显示下拉菜单， 应用极为广泛</p>
@@ -472,7 +472,7 @@ function activateLightMode(){
 <li><p>特点： 隐藏之后，继续保留原有位置。（停职留薪）</p>
 </li>
 </ul>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/30visibility.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/30visibility.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/30visibility.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/30visibility.png" class="lazyload"></a></p>
 <h4 id="1-3-overflow-溢出"><a href="#1-3-overflow-溢出" class="headerlink" title="1.3 overflow 溢出"></a>1.3 overflow 溢出</h4><ul>
 <li>检索或设置当对象的内容超过其指定高度及宽度时如何管理内容。</li>
 </ul>
@@ -500,7 +500,7 @@ function activateLightMode(){
 <td>超出自动显示滚动条，不超出不显示滚动条</td>
 </tr>
 </tbody></table>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/33overflow.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/33overflow.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/33overflow.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/33overflow.png" class="lazyload"></a></p>
 <p>实际开发场景：</p>
 <ol>
 <li>清除浮动</li>
@@ -570,7 +570,7 @@ function activateLightMode(){
 <p> 鼠标放我身上查看效果哦：</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">html</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"cursor:default"</span>&gt;</span>我是小白<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"cursor:pointer"</span>&gt;</span>我是小手<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"cursor:move"</span>&gt;</span>我是移动<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"cursor:text"</span>&gt;</span>我是文本<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"cursor:not-allowed"</span>&gt;</span>我是文本<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
 
-<h4 id="2-2、轮廓线-outline"><a href="#2-2、轮廓线-outline" class="headerlink" title="2.2、轮廓线 outline"></a>2.2、轮廓线 outline</h4><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/outline.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/outline.png" class="lazyload" title></a></p>
+<h4 id="2-2、轮廓线-outline"><a href="#2-2、轮廓线-outline" class="headerlink" title="2.2、轮廓线 outline"></a>2.2、轮廓线 outline</h4><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/outline.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/outline.png" class="lazyload"></a></p>
 <p> 是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。 </p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang"></div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">outline : outline-color ||outline-style || outline-width</span><br></pre></td></tr></table></figure></div>
 
@@ -578,7 +578,7 @@ function activateLightMode(){
 <p>最直接的写法是 ：  outline: 0;   或者  outline: none;</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">html</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span>  <span class="attr">type</span>=<span class="string">"text"</span>  <span class="attr">style</span>=<span class="string">"outline: 0;"</span>/&gt;</span></span><br></pre></td></tr></table></figure></div>
 
-<h4 id="2-3、防止拖拽文本域resize"><a href="#2-3、防止拖拽文本域resize" class="headerlink" title="2.3、防止拖拽文本域resize"></a>2.3、防止拖拽文本域resize</h4><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/34textarea.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/34textarea.png" class="lazyload" title></a></p>
+<h4 id="2-3、防止拖拽文本域resize"><a href="#2-3、防止拖拽文本域resize" class="headerlink" title="2.3、防止拖拽文本域resize"></a>2.3、防止拖拽文本域resize</h4><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/34textarea.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/34textarea.png" class="lazyload"></a></p>
 <p>实际开发中，我们文本域右下角是不可以拖拽： </p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">html</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span>  <span class="attr">style</span>=<span class="string">"resize: none;"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
 
@@ -612,7 +612,7 @@ function activateLightMode(){
 </ul>
 <p>但是我们从来没有讲过有垂直居中的属性。</p>
 <p>vertical-align 垂直对齐，它只针对于<strong>行内元素</strong>或者<strong>行内块元素</strong>，</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/xian.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/xian.jpg" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/xian.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/xian.jpg" class="lazyload"></a></p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang"></div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vertical-align : baseline |top |middle |bottom</span><br></pre></td></tr></table></figure></div>
 
 <p>设置或检索对象内容的垂直对其方式。</p>
@@ -623,9 +623,9 @@ function activateLightMode(){
 </li>
 </ul>
 <h4 id="3-1、图片、表单和文字对齐"><a href="#3-1、图片、表单和文字对齐" class="headerlink" title="3.1、图片、表单和文字对齐"></a>3.1、图片、表单和文字对齐</h4><p>所以我们知道，我们可以通过vertical-align 控制图片和文字的垂直关系了。 默认的图片会和文字基线对齐。</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jixian.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jixian.jpg" class="lazyload" title></a></p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/1498.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/1498.png" class="lazyload" title></a></p>
-<h4 id="3-2、去除图片底侧空白缝隙"><a href="#3-2、去除图片底侧空白缝隙" class="headerlink" title="3.2、去除图片底侧空白缝隙"></a>3.2、去除图片底侧空白缝隙</h4><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/35vertical.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/35vertical.png" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jixian.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/jixian.jpg" class="lazyload"></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/1498.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/1498.png" class="lazyload"></a></p>
+<h4 id="3-2、去除图片底侧空白缝隙"><a href="#3-2、去除图片底侧空白缝隙" class="headerlink" title="3.2、去除图片底侧空白缝隙"></a>3.2、去除图片底侧空白缝隙</h4><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/35vertical.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/35vertical.png" class="lazyload"></a></p>
 <ul>
 <li><p>原因：</p>
 <p>图片或者表单等行内块元素，他的底线会和父级盒子的基线对齐。</p>
@@ -681,7 +681,7 @@ function activateLightMode(){
 
 <p>结束语：   小公司，背景图片很少的情况，没有必要使用精灵技术，维护成本太高。 如果是背景图片比较多，可以建议使用精灵技术。</p>
 <h3 id="6、滑动门"><a href="#6、滑动门" class="headerlink" title="6、滑动门"></a>6、滑动门</h3><h4 id="1、滑动门出现的背景"><a href="#1、滑动门出现的背景" class="headerlink" title="1、滑动门出现的背景"></a>1、滑动门出现的背景</h4><p>制作网页时，为了美观，常常需要为网页元素设置特殊形状的背景，比如微信导航栏，有凸起和凹下去的感觉，最大的问题是里面的字数不一样多，咋办？</p>
-<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/wxx.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/wxx.jpg" class="lazyload" title></a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/wxx.jpg" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/wxx.jpg" class="lazyload"></a></p>
 <p>为了使各种特殊形状的背景能够自适应元素中文本内容的多少，出现了CSS滑动门技术。它从新的角度构建页面，使各种特殊形状的背景能够自由拉伸滑动，以适应元素内部的文本内容，可用性更强。 最常见于各种导航栏的滑动门。</p>
 <h4 id="2、核心技术"><a href="#2、核心技术" class="headerlink" title="2、核心技术"></a>2、核心技术</h4><p>核心技术就是利用CSS精灵（主要是背景位置）和 盒子padding撑开宽度, 以便能适应不同字数的导航栏。</p>
 <p>一般的经典布局都是这样的：</p>
@@ -699,11 +699,11 @@ function activateLightMode(){
 <li>之所以a包含span就是因为 整个导航都是可以点击的。</li>
 </ol>
 <h3 id="7、margin负值之美"><a href="#7、margin负值之美" class="headerlink" title="7、margin负值之美"></a>7、margin负值之美</h3><h4 id="1、负边距-定位：水平垂直居中"><a href="#1、负边距-定位：水平垂直居中" class="headerlink" title="1、负边距+定位：水平垂直居中"></a>1、负边距+定位：水平垂直居中</h4><p>一个绝对定位的盒子， 利用  父级盒子的 50%，  然后 往左(上) 走 自己宽度的一半 ，可以实现盒子水平垂直居中。</p>
-<h4 id="2、压住盒子相邻边框"><a href="#2、压住盒子相邻边框" class="headerlink" title="2、压住盒子相邻边框"></a>2、压住盒子相邻边框</h4><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/margin.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/margin.png" class="lazyload" title></a></p>
+<h4 id="2、压住盒子相邻边框"><a href="#2、压住盒子相邻边框" class="headerlink" title="2、压住盒子相邻边框"></a>2、压住盒子相邻边框</h4><p><a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/margin.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/margin.png" class="lazyload"></a></p>
 <h3 id="7-2-CSS三角形之美"><a href="#7-2-CSS三角形之美" class="headerlink" title="7.2 CSS三角形之美"></a>7.2 CSS三角形之美</h3><div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">css</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="attribute">width</span>: <span class="number">0</span>; </span><br><span class="line"></span><br><span class="line">   <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">   <span class="attribute">line-height</span>:<span class="number">0</span>；</span><br><span class="line">   font-size: <span class="number">0</span>;</span><br><span class="line"><span class="attribute">border-top</span>: <span class="number">10px</span> solid red;</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-right</span>: <span class="number">10px</span> solid green;</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-bottom</span>: <span class="number">10px</span> solid blue;</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-left</span>: <span class="number">10px</span> solid <span class="number">#000</span>; </span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <p>一张图， 你就知道 css 三角是怎么来的了, 做法如下：</p>
-<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/arr.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/arr.png" class="lazyload" title></a></p>
+<p> <a href="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/arr.png" target="_blank" rel="noopener" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="https://cdn.jsdelivr.net/gh/StriveLqq/CDN_for_blog@1.9/css-note01/arr.png" class="lazyload"></a></p>
 <ol>
 <li>我们用css 边框可以模拟三角效果</li>
 <li>宽度高度为0</li>
